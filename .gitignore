@@ -196,3 +196,4 @@ FakesAssemblies/
 *.opt
 /Java/SuperTipCalculationService/nbproject/private/
 /Java/SuperTipCalculationService/dist/
+/Java/SuperTipCalculationService/nbproject

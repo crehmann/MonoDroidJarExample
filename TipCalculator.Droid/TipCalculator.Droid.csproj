@@ -47,10 +47,6 @@
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Xml" />
-    <Reference Include="TipCalculator.Droid.SuperTipCalculationService, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\TipCalculator.Droid.SuperTipCalculationService\bin\Debug\TipCalculator.Droid.SuperTipCalculationService.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
@@ -76,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Assets\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\TipCalculator.Droid.SuperTipCalculationService\TipCalculator.Droid.SuperTipCalculationService.csproj">
+      <Project>{80a23739-d864-47dd-aa9c-a82418a1809b}</Project>
+      <Name>TipCalculator.Droid.SuperTipCalculationService</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
