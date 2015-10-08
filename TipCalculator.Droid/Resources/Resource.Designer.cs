@@ -60,14 +60,14 @@ namespace TipCalculator.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050001
-			public const int button_calulate = 2131034113;
+			// aapt resource value: 0x7f050002
+			public const int button_calulate = 2131034114;
 			
 			// aapt resource value: 0x7f050000
 			public const int edittext_tip_input = 2131034112;
 			
-			// aapt resource value: 0x7f050002
-			public const int textview_tip_output = 2131034114;
+			// aapt resource value: 0x7f050001
+			public const int textview_tip_output = 2131034113;
 			
 			static Id()
 			{

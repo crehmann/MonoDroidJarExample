@@ -1,13 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent">
-  <EditText android:id="@+id/edittext_tip_input"/>
-<Button  
-    android:id="@+id/button_calulate"
-    android:layout_width="fill_parent" 
-    android:layout_height="wrap_content" 
-    android:text="@string/action_calculate_tip"/>
-  <TextView android:id="@+id/textview_tip_output"/>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <TextView
+        android:text="Price:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/edittext_tip_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+    <TextView
+        android:text="Tip:"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp" />
+    <TextView
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview_tip_output" />
+    <Button
+        android:id="@+id/button_calulate"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/action_calculate_tip"
+        android:layout_marginBottom="16dp"
+        android:layout_marginTop="16dp" />
 </LinearLayout>

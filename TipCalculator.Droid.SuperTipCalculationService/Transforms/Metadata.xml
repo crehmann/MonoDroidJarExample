@@ -1,9 +1,16 @@
 <metadata>
   <!--
-  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
-  
-  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
-  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  Java allows deriving a public class from non-public class, which is unsupported in .NET. 
+  Since the binding generator does not generate bindings for non-public classes, derived classes such as these cannot be generated correctly. 
+  To fix this, either remove the metadata entry for those derived classes using the remove-node in Metadata.xml, or fix the metadata that is making the non-public class public. 
+    
+  Although the latter solution will create the binding so 
+that the C# source will build, the non-public class should not be 
+used. For information on using metadata.xml see the 
+[Java Bindings Metadata](/guides/android/advanced_topics/java_integration_overview/binding-a-java-library/java-bindings-metadata).
+<attr path="/api/package[@name='crehmann.samples.monodroidjarexample']/class[@name='TipCalculationServiceBase']" name="visibility">public</attr>
   -->
+  <attr path="/api/package[@name='crehmann.samples.monodroidjarexample']/class[@name='TipCalculationServiceBase']" name="visibility">public</attr>
+
+
 </metadata>
