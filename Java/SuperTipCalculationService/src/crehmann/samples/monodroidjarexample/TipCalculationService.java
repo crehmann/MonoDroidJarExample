@@ -11,5 +11,5 @@ package crehmann.samples.monodroidjarexample;
  */
 public interface TipCalculationService {
 
-    public TipCalculationResult calculateTip(TipRequest request);
+    public Object calculateTip(TipRequest request);
 }

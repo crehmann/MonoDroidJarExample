@@ -42,7 +42,8 @@ namespace TipCalculator.Droid
             if(double.TryParse(_priceEditTExt.Text, out price))
             {
                 var tipRequest = new TipRequest() { Price = price, Satisfaction = Satisfaction.Excellent };
-                var result = _tipService.CalculateTip(tipRequest);
+                var result = _tipService.CalculateTip(tipRequest) as TipCalculationResult;
+                if (result == null) return;
                 _tipOutput.Text = result.Tip.ToString("0.00");
             }
             
