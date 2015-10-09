@@ -10,4 +10,5 @@ public class TipCalculationServiceImpl extends TipCalculationServiceBase {
     public TipCalculationResult calculateTip(TipRequest request){
         return super.calculateTip(request);
     }
+
 }

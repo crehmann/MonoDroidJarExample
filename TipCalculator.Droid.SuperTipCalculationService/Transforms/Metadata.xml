@@ -1,4 +1,7 @@
 <metadata>
+
+  
+  
   <!--
   Java allows deriving a public class from non-public class, which is unsupported in .NET. 
   Since the binding generator does not generate bindings for non-public classes, derived classes such as these cannot be generated correctly. 

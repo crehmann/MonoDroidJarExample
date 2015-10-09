@@ -1,17 +1,15 @@
 package crehmann.samples.monodroidjarexample;
 
-import java.util.ArrayList;
-
 /**
  *
  * @author chris
  */
-abstract class TipCalculationServiceBase implements TipCalculationService{
+abstract class TipCalculationServiceBase implements TipCalculationService {
 
     @Override
     public TipCalculationResult calculateTip(TipRequest request) {
         TipCalculationResult result = new TipCalculationResult();
-        switch(request.getSatisfaction()){
+        switch (request.getSatisfaction()) {
             case Awful:
                 // Let them know you don't forget to tip
                 result.setTip(0.1);
@@ -32,7 +30,8 @@ abstract class TipCalculationServiceBase implements TipCalculationService{
                 result.setTip(0);
                 break;
         }
-        
+
         return result;
     }
+
 }
